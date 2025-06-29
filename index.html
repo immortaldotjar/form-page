@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <h4>Personal Information</h4>
+            <div class="padding">
+                <label for="fname">First Name : </label>
+                <input type="text" name="fname" id="fname">
+            </div>
+
+            <div class="padding">
+                <label for="lname">Last Name : </label>
+                <input type="text" name="lname" id="lname">
+            </div>
+            <div class="padding">
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="padding">
+                <label for="gender">Gender : </label>
+                <select name="gender" id="gender">
+                    <option value="" selected>Choose the gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+
+            <h4>Account Information</h4>
+
+            <div class="padding">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+                <fieldset>(Your email address will be your name)</fieldset>
+            </div>
+
+            <div class="padding">
+                <label for="remail">Re-Type Email :</label>
+                <input type="email" name="remail" id="remail">
+            </div>
+
+            <div class="padding">
+                <label for="pass">Password :</label>
+                <input type="password" name="pass" id="pass" maxlength="8">
+                <fieldset>(Min. 8 char.,1 number,case-sensitive)</fieldset>
+            </div>
+
+            <div class="padding">
+                <label for="rpass">Re-type Password:</label>
+                <input type="password" name="rpass" id="rpass" maxlength="8">
+            </div>
+
+            <div class="padding">
+                <label for="sq">Security Quetion : </label>
+                <select name="sq" id="sq">
+                    <option value="1" selected>Choose a Question</option>
+                    <option value="2">Pradhanmantri ke phone ka password</option>
+                </select>
+            </div>
+
+            <div class="padding">
+                <label for="ans">Security Answer : </label>
+                <input type="text" name="ans" id="ans">
+                <fieldset>(Not case-sensitive)</fieldset>
+            </div>
+
+            <h4>Contact Information</h4>
+
+            <div class="padding">
+                <label for="address">Address : </label>
+                <textarea name="address" id="address"></textarea>
+                
+            </div>
+
+            <div class="padding">
+                <label for="city">City : </label>
+                <select name="city" id="city">
+                    <option value="" select>Select your City</option>
+                    <option value="1">Lucknow</option>
+                </select>
+            </div>
+
+            <div class="padding">
+                <label for="state">State : </label>
+                <select name="state" id="state">
+                    <option value="" select>Select your State</option>
+                    <option value="1">UP</option>
+                </select>
+            </div>
+
+            <div class="padding">
+                <label for="zip">Zipcode : </label>
+                <input type="number" name="zip" id="zip" >
+            </div>
+
+            <div class="padding">
+                <label for="phone">Phone : </label>
+                <input type="tel" name="phone" id="phone" maxlength="10">
+                
+                <select name="device" id="phone" >
+                    <option value="1">Mobile</option>
+                    <option value="2">Landline</option>
+                </select>
+                <fieldset>(No space or dash)</fieldset>
+            </div>
+            
+            <div>
+                <button class="log">Submit</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
